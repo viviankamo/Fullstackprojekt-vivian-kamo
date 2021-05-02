@@ -39,7 +39,6 @@
     }
   }
   
-  /* screen size 375px */
   
   @media only screen and (max-width: 375px) {
     .section-4 .card {

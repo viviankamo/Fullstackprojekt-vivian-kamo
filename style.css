@@ -107,7 +107,6 @@ header .container .col-md-7 p {
   font-weight: bold;
 }
 
-/********** section 1 **************/
 
 .section-1 {
   padding: 20vmin 0vmin;
@@ -147,7 +146,6 @@ header .container .col-md-7 p {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/*  Section 2  */
 
 .cover {
   width: 100%;
@@ -255,7 +253,6 @@ header .container .col-md-7 p {
   padding: 1em 0.5em;
 }
 
-/* Section 3 */
 
 .section-3 {
   height: 70vmin;
@@ -292,7 +289,6 @@ header .container .col-md-7 p {
   font-size: 2vmin;
 }
 
-/* Section Team */
 
 .section-4 .container h1 {
   font-size: 6vmin;
@@ -351,8 +347,6 @@ footer .input-group .input-group-text {
 footer .column i {
   color: #fdfdfd;
 }
-
-/* It is Adjacent sibling combinator */
 
 footer .column i + i {
   padding: 0 0.5em;
