@@ -277,7 +277,7 @@ Det blir vit bakgrund så att dator och mobil symbolerna + texten ska synas och 
 }
 
 /* Här hoppar texten ner lite mha padding så det inte blir tajt och bilderna för de olika personer blir inte längre fyrkantiga 
-och stora utan passar in i boxarna med en rundare/mindre bild. Boxarnas storlek minskar också så det blir mer mellanrum./snyggare */
+och stora utan passar in i boxarna med en rundare/mindre bild. Boxarnas storlek minskar också så det blir mer mellanrum/snyggare */
 .section-4 .container h1 {
   font-size: 6vmin;
   padding-top: 14vmin;
