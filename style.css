@@ -1,3 +1,4 @@
+/* Google font för fontsen som används är länkad här */
 @import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
 * {
   box-sizing: border-box;
@@ -8,6 +9,7 @@ section {
   overflow-x: hidden;
 }
 
+/* Variabler som specifiserar fonterna och färgerna som används */
 :root {
   --Sniglet-font: "Sniglet", cursive;
   --Rubik: "Rubik", cursive;
@@ -18,36 +20,15 @@ section {
   --light-gray: rgba(255, 255, 255, 0.877);
 }
 
+/* Första delen av hemsidan (headern) är dessa färger som används och font storleken */
 header a {
   font-family: var(--Sniglet-font);
   font-size: 0.9em;
   color: whitesmoke;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
+/* Hur headern ska de ut när det kommer till padding, när man hovrar över navbar ska det bli svart, detta påverkar
+även var texten ligger på Home-sidan, hur tjock text det är och mellanrummet mellan orden + hur knappen för medlemskap ska se ut. */
 header .nav-item:last-child {
   padding-right: 10.5em;
 }
@@ -78,8 +59,6 @@ header .row .col-md-5 img {
 }
 
 header {
-  background: #ff512f;
-  /* fallback for old browsers */
   background: var(--bggradient);
 }
 
@@ -107,7 +86,8 @@ header .container .col-md-7 p {
   font-weight: bold;
 }
 
-
+/* Bestämmer utseendet för sektion 1, här fixas bilden så att den inte blir så stor utan passar in i sidan och testen som ligger 
+bredvid hamnar lite över bilden till vänster och här bestäms font, skugga, färg och storlek på texten samt positionering */
 .section-1 {
   padding: 20vmin 0vmin;
 }
@@ -146,7 +126,8 @@ header .container .col-md-7 p {
   color: rgba(0, 0, 0, 0.5);
 }
 
-
+/* Utseendet för sektion 2 (statistik) vilken färg det ska vara för bakgrund + text men även storlek, font och padding.
+Texten ska även va placerad över bakgrunden och vara centrerad*/
 .cover {
   width: 100%;
   height: 55vmin;
@@ -184,6 +165,9 @@ header .container .col-md-7 p {
   color: #e5e5e5;
 }
 
+/* Här gör det att boxarna syns genom att ha en ljus beige färg i bakgrunden av boxarna som lyser så det framhäver dom.
+Boxarna hamnar också inte under sidan utan halva på bakgrunden och halva på nästa sida. Bokstäverna är större och får samma 
+färg som bakgrunden då det är snyggare. */
 .numbers .rect {
   position: relative;
   z-index: 1;
@@ -209,6 +193,8 @@ header .container .col-md-7 p {
   font-family: var(--Patua);
 }
 
+/* Här blir det lite mellanrun mellan statistik och shop-sidan med hjälp av padding så att allt inte blir så taljt. Rubriken får en
+snyggare font, storleken på priset blir större och även boxarna så att de inte är så små. */
 .purchase > h1 {
   padding-top: 15vmin;
   padding-bottom: 0.1em;
@@ -253,7 +239,8 @@ header .container .col-md-7 p {
   padding: 1em 0.5em;
 }
 
-
+/* Här blir det samma färg i bakgrunden som det är för Home-page så att de hänger ihop lite (då appen ska spegla hemsidan)
+Det blir vit bakgrund så att dator och mobil symbolerna + texten ska synas och de blir rundare i formen mer som knappar nästan. */
 .section-3 {
   height: 70vmin;
   margin-top: 15vmin;
@@ -289,7 +276,8 @@ header .container .col-md-7 p {
   font-size: 2vmin;
 }
 
-
+/* Här hoppar texten ner lite mha padding så det inte blir tajt och bilderna för de olika personer blir inte längre fyrkantiga 
+och stora utan passar in i boxarna med en rundare/mindre bild. Boxarnas storlek minskar också så det blir mer mellanrum./snyggare */
 .section-4 .container h1 {
   font-size: 6vmin;
   padding-top: 14vmin;
@@ -321,14 +309,12 @@ header .container .col-md-7 p {
   width: 60%;
 }
 
+/* Även padding här så footern inte blir så liten och det är mer plats för innehållet, svart bakgrund, vit text och även vit färg
+för symbolerna. Pilen i rutan där man ska skriva emailen blir samma färg som homebakgrunden + lite space mellan symbolerna. */
 footer {
   background: rgba(0, 0, 0, 0.815);
   overflow-x: hidden;
   padding: 14vmin 18vmin;
-}
-
-footer p > span {
-  color: #ff512f;
 }
 
 footer input {
@@ -352,6 +338,8 @@ footer .column i + i {
   padding: 0 0.5em;
 }
 
+/* Hur navigationen ska se ut när man går ner och inte längre kan se home-page, svart bakgrund och vit text som följer med ner
+i de olika sidorna */
 .sticky {
   position: fixed;
   top: 0;

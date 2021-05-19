@@ -17,6 +17,8 @@
 
 <body>
   <header>
+    
+    <!-- Navigerings menyn som innehåller alla sidor och som man hittar exempel på i bootstrap-components-Navbar  -->
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
@@ -26,6 +28,7 @@
           <i class="fas fa-align-right text-light"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Gör så att navigeringen håller sig till höger sida -->
           <div class="mr-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item active">
@@ -33,6 +36,7 @@
                 <span class="sr-only"></span>
               </a>
             </li>
+            <!-- Sidornas namn och position -->
             <li class="nav-item">
               <a class="nav-link" href="#">ABOUT</a>
             </li>
@@ -52,18 +56,22 @@
         </div>
       </nav>
     </div>
+    <!-- Skapar en container som ska inehålla välkomstexten + knapp för hemsidan och ser till så att all text är centrerad  -->
     <div class="container text-center">
       <div class="row">
         <div class="col-md-7 col-sm-12  text-white">
+          <!-- Olika textstorlekar så det ser snyggare ut och lockar ögat till det viktigaste -->
           <h6>BECOME A MEMBER</h6>
           <h1>Enjoy reading</h1>
           <p>
             Members get one free book every 2 months and have access to over 250000 books online.
           </p>
+          <!-- Knapp för de som vill bli medlemmar  -->
           <button class="btn btn-light px-5 py-2 primary-btn">
             Only $15
           </button>
         </div>
+        <!-- Första bilden på hemsidan som jag lagt i mappen images där man kan koppla till alla bilder som behövs -->
         <div class="col-md-5 col-sm-12  h-25">
           <img src="../images/book3.jpg" alt="Book" />
         </div>
@@ -71,14 +79,18 @@
     </div>
   </header>
   <main>
+    <!-- Här skapas en egen sektion som en ruta där det ska vara bakgrundsinformation om skaparen av hemsidan
+    och centrerad text -->
     <section class="section-1">
       <div class="container text-center">
         <div class="row">
           <div class="col-md-6 col-12">
+            <!-- Den andra bilden på hemsidan som ligger till vänster i sektionen på någon som läser  -->
             <div class="pray">
               <img src="../images/reading.jpg" alt="Pray" class="" />
             </div>
           </div>
+          <!-- Texten om personen ligger till höger om bilden i en egen vit ruta där texten ligger till vänster -->
           <div class="col-md-6 col-12">
             <div class="panel text-left">
               <h1>Michelle Williams</h1>
@@ -96,6 +108,8 @@
         </div>
       </div>
     </section>
+    <!-- Andra sektionen är nästa sida där det står statistik mm. Detta skapar en bakgrund där jag valde en färg att ha och texten
+    står över bakgrunden -->
     <section class="section-2 container-fluid p-0">
       <div class="cover">
         <div class="overlay"></div>
@@ -106,6 +120,8 @@
           </p>
         </div>
       </div>
+      <!-- 4 rektanglar med olika siffror på nån sorts statistik där halva delen av boxen ligger på 2-sektionens bakgrund och andra 
+      halvan på den vita bakgrunden i nästa sida (använder flex-box) som förenklar placeringen -->
       <div class="container-fluid text-center">
         <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
           <div class="rect">
@@ -127,7 +143,8 @@
         </div>
       </div>
 
-
+     <!-- Shop sidan där det finns tre boxar som man kan välja mellan (olika typer av böcker) även använt mig av flex-box och 
+    mallen från bootstrap-card, texten var även centrerad och i olika storlekar. En knapp för varje typ av bok. -->
       <div class="purchase text-center">
         <h1>Purchase a new book!</h1>
         <p>
@@ -181,6 +198,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Ruta med rubrik där man kan ladda ner sidan på mobil eller dator ( två knappar ). -->
     <section class="section-3 container-fluid p-0 text-center">
       <div class="row">
         <div class="col-md-12 col-sm-12">
@@ -192,6 +211,8 @@
           </p>
         </div>
       </div>
+      <!-- Använder flexbox och skuggor för utseendet samt två symboler för dator och mobil som jag har tagit från hemsidan fontawsome som är 
+    länkad högst upp med de andra länkarna så jag kunde använda dom. -->
       <div class="platform row">
         <div class="col-md-6 col-sm-12 text-right">
           <div class="desktop shadow-lg">
@@ -218,7 +239,9 @@
       </div>
     </section>
 
-  
+  <!-- Reviews sektionen där det finns totalt 4 omdömen av olika peroner, 2 på sidorna och 2 som roterar i mitten.
+  Varje person har en egen vit ruta med bild längst upp och sedan namn + text under. Mallen för den lilla sliden som gör 
+att de roterar är från bootstrap-carousel-slides only. Alla bilder ligger som sagt i images som jag länkar till. -->
     <section class="section-4">
       <div class="container text-center">
         <h1 class="text-dark">Reviews from our readers</h1>
@@ -301,6 +324,8 @@
       </div>
     </section>
   </main>
+
+  <!-- Footern innehåller en kort About us där texten ligger till vänster och med lite ljusare text (inte så stark) -->
   <footer>
     <div class="container-fluid p-0">
       <div class="row text-left">
@@ -310,6 +335,8 @@
           <p class="text-muted">Copyright ©2018 All rights reserved |
           </p>
         </div>
+        <!-- Om man vill få mail/info om företaget kan man skriva in sin email i en box även ljus text här och det
+        står email i den lilla rutan så besökaren förstår vad man ska skriva -->
         <div class="col-md-5 col-sm-12">
           <h4 class="text-light">Newsletter</h4>
           <p class="text-muted">Dont miss the latest!</p>
@@ -326,6 +353,7 @@
             </div>
           </form>
         </div>
+        <!-- Följ oss med svag text under och 4 symboler för olika sociala medier  -->
         <div class="col-md-2 col-sm-12">
           <h4 class="text-light">Follow Us</h4>
           <p class="text-muted">On all platforms.</p>

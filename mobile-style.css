@@ -1,3 +1,9 @@
+
+/* Här används media queries för att anpassa hemsidan utifrån olika storlekar som användaren kan välja 
+ex. dator, padda eller mobil så vid olika storlekar ska sidans olika delar anpassa sig. Så till exempel på mobilen så 
+kan de inte vara lika brett som på datorn så alla komponenter/sidor hamnar under varandra och navigationen är en symbol som går
+att trycka på så att namnen på alla olika sidor visas under varandra.  */
+
 @media only screen and (max-width: 768px) {
     header .navbar-brand {
       padding-left: 1rem;
